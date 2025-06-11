@@ -101,7 +101,7 @@ class Webhook:
 
         # Send webhook notification
         webhook_data = {
-            "metadata": json.dumps(custom_metadata),
+            "metadata": custom_metadata,
             "external_uid": external_uid,
             "images": json.dumps(saved_files)
         }
